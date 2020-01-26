@@ -1,0 +1,553 @@
+/* REGLAS 
+  SELECTORES
+  DECLARACIONES
+  PROPIEDADES
+  VALORES
+  */
+  
+/*Selector de etiqueta
+  header{
+    background: pink;
+  }
+  */
+
+/*selector descendente
+  body header div nav ol li a */
+    
+/*selector de clase
+    .link*/
+
+/*Selector de id #
+  #portafolio */
+
+
+/* APLICANDO ETIQUETA DE ICONO PARA MENU DEZPLEGABLE */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3ot2jt');
+  src:  url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3ot2jt') format('truetype'),
+    url('../fonts/icomoon.woff?3ot2jt') format('woff'),
+    url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_menu:before {
+  content: "\e900";
+}
+/*APLICANDO FUENTE AL BODY */
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 auto;
+}
+/*APLICANDO PROPIEDADES A SELECTORES DIFERENTES*/
+h1,  
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+/*********** SECCION DE MENU **************/
+.header{
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  flex-wrap: wrap;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.menu{
+  height: inherit;
+}
+
+.header ol{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  height: inherit;
+}
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+/*´PORTAFOLIO*/
+.portfolio{
+background: #fafafa;
+padding: 20px;
+}
+
+/*********SECCION DE PROYECTOS**********/
+.project{
+/*border-top: 10px solid red;
+border-right: 10px solid red;
+border-left: 10px solid red;
+border-bottom: 10px solid red;*/
+border: 1px solid gray;
+border-radius: 10px;
+/*margin: 10px;*/
+margin-bottom: 15px;
+padding: 20px;
+background: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.project_title{
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.project_course{
+  font-size: 15px;
+  margin: auto;
+}
+.project_date,
+.project_url{
+  margin: 10px 0;
+}
+
+.project_description{
+  font-size: 18px;
+}
+
+.project_details{
+width: 50%;
+/*height: 200px;*/
+}
+
+.project_image_container{
+  width: 50%;
+}
+.project_image_container img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project strong{
+  font-family: 'Fjalla One', sans-serif;
+}
+/*Cambiar el alto de linea*/
+/*Siempre es mejor cambiar los estilos desde css en vez de html*/
+h1{
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+  width: 50%;
+  /*margin: 100px 150px 170px 30px;*/
+  /*text-transform: uppercase;  Convierte las palabras en mayusculas*/
+  /*text-decoration: underline; Subraya todo el texto de el titulo*/
+}
+
+h1 strong{
+  color: #056fff;
+}
+
+h2{
+color: #026fff;
+text-transform: uppercase;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 40px;
+}
+
+.hero{
+  height: 300px;
+  /*background-image: url('../imagenes/FB_IMG_1543611995617.jpg');  /*Colorcar imagen de fondo*/
+  /*Configurar imagen y fondo
+  background-size: 600px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;*/
+  background-color:  #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero_image{
+object-fit: cover;
+/* border-radius: 5%; */
+}
+
+/*********SECCION DE EVENTOS**********/
+.event_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background:#f4fbff;
+}
+
+.event_list_title{
+margin-left: 10px;
+}
+
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event_detail{
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.event_description{
+text-align: justify;
+}
+
+.event_url{
+color: #056fff;
+border: 1px solid;
+padding:  5px 20px;
+text-decoration: none;
+border-radius: 5px;
+}
+/****************SECCION DE CONTACTO**************/
+.contact{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  /*LINKS DE REDES SOCIALES*/
+  .social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+  }
+  .social_link.twitter{
+    background-image: url('../imagenes/twitter_1.svg');
+  }
+  .social_link.facebook{
+    background-image: url('../imagenes/facebook_1.svg');
+  }
+  .social_link.github{
+    background-image: url('../imagenes/github.png');
+  }
+  .social_link.instagram{
+    background-image: url('../imagenes/instagram_1.svg');
+  }
+  /* IMAGEN DENTRO DE LA BANDEJA DE CORREO */
+  .form_email input{
+  border-color: gray;
+  padding:  10px 20px 10px 30px;
+  background-image: url('../imagenes/mensaje.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  }
+  /* boton para enviar correo */
+  .form_email button{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  }
+  /* BOTON PARA DEJAR CORREO */
+  .form_email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  /*DETALLES*/
+  .container{
+  max-width: 1000px;
+ /*  width: 100%; */
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  }
+
+/************SECCION DE FOOTER*****************/
+.footer{
+color: white;
+background-color:#1d252c;
+display: flex;
+align-items:center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a{
+  color: white;
+}
+.html_video{
+  width: 100%;
+/*   max-width: 100%; */
+  height: auto;
+}
+
+/********** CREANDO BOTON INTERACTIVO *********/
+.burger_button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 15px;
+  color: white;
+  font-size: 40px;
+}
+
+
+/*********** MEDIA QUERIES PARA RESPONSIVE DESIGN  ************/
+/* SI VAMOS A EMPEZAR CON FIRST DESKTOP ES NECESARIO INICIAR CON LA RESOLUSION MAS ALTA */
+
+@media screen and (max-width: 1023px){
+  .container{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero_image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+    width: auto;
+  }
+
+  .youtube_video{
+   /*  width: 100%;
+    max-width: 100%; 
+    height: auto; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .flexible_video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: #056fff;
+    position: relative;
+  }
+}
+@media screen and (max-width: 767px){
+
+  h2{
+    font-size: 1.2em;
+    margin: .8em 0;
+  }
+  .burger_button{
+    display: block;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ol{
+    display: block;
+  }
+  .header ol li{
+    height: 50px;
+  }
+  .header a{
+    justify-content: center;
+    height: auto;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+  }
+  .header .logo{
+    text-align: center;
+  }
+  /*********** CREANDO MENU DESPEGABLE ***********/
+  .menu{
+    position: fixed;
+    background:rgba(2, 111, 255, .9);;
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    width: 100vw;
+ /*    height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  /******** HACIENDO QUE EL MENU SE MUESTRE **********/
+  .menu.is_active{
+    left: 0;
+  }
+  .project{
+    display: block;
+  }
+  .project_image_container{
+    width: auto;
+    text-align: center;
+  }
+  .project_details{
+    width: auto;
+    font-size: 16px;
+  }
+  .project_course, .project_date, .project_url{
+    margin: .3em 0;
+  }
+  .project_title{
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  .project_url{
+    font-size: 1em;
+  }
+  .project_course{
+    font-size: .7em;
+  }
+  .project_date{
+    font-size: 1em;
+  }
+  .project_description{
+    font-size: .8em;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 1.5em;
+    width: auto;
+  }
+  .project_details{
+    font-size: 16px;
+  }
+  .event_detail{
+    /* 1em=16px */
+    margin: -.2em .5em .5em;
+    padding: 1.5em;
+  }
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .form_email button{
+    margin: 1em auto;
+  }
+  .form_email h3{
+    margin-top: 0;
+  }
+  .form_email, .social a{
+    margin: 0 5px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+}
+@media screen and (max-width: 320px){
+h1{
+  font-size: 1.2em;
+  width: auto;
+}
+.hero{
+  padding: 2em 1em;
+}
+  
+}

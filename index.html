@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Portafolio</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="imagenes\portafolio.svg"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="css\estilos.css" rel="stylesheet">  
+    <!-- <link rel="stylesheet" href="C:\Users\52961\Desktop\PLATZI\DESARROLLO WEB ONLINE\CSS\media.css" media="screen and (max-width:768px)"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- ETIQUETA DE ICONO PARA MENU DEZPEGABLE -->
+    <i class="icon_menu burger_button" id="burger_menu"></i>
+<!----------- SECCION DE MENU ------------- -->
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img src="imagenes/header_1.png" height="70" alt="logo"/>
+      </figure>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a class="link" href="#experiencia">Experiencia</a>
+          </li>
+          <li>
+            <a class="link" href="#trabajemos">Trabajemos Juntos</a>
+          </li>
+        </ol>
+      </nav>
+      </div>  
+    </header>
+    
+<!------------- SECCION DE ENCABEZADO ------------>
+    <section class="hero"> 
+      <div class="container">
+        <h1>
+          ¡Hola! Soy <strong>estudiante</strong></br> de la <strong>carrera</strong> de <strong>Ingeniería</strong><br> en <strong>  Sistemas Computacionales.</strong><br>
+        </h1>
+        <img class="hero_image" src="imagenes/prog.jpg" width="500" height="300" alt="Imagen Principal del Sitio"/>
+      </div>
+    </section>
+    
+<!------------ SECCION DE PROYECTOS ---------->
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Portafolio (Elementos Destacados)</h2>
+        <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Creacion de portafolio Personal</h3>
+          <h6 class="project_course">Curso de Desarrollo Web Online</h6>
+          <p class="project_date"><small><strong>Fecha:</strong> 15/Enero/2020</small></p>
+          <p class="project_url"><small><strong>Puedes verlo en:</strong> https://platzi.com</small></p>
+          <p class="project_description">Desarrolla tu propia página web con HTML5 y CSS3. Crea un sitio web para tu producto, personalízalo e inicia tu carrera para ser un Fronted profesional.</p class="project_description">
+        </div>
+        <figure class="project_image_container">
+          <img src="imagenes/project.png" alt="Proyecto" width="500"/>
+        </figure>
+        </article>
+        <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Creacion de Clon de Google</h3>
+          <h6 class="project_course">Curso Práctico de HTML y CSS</h6>
+          <p class="project_date"><small><strong>Fecha:</strong> 17/Enero/2020</small></p>
+          <p class="project_url"><small><strong>Puedes verlo en:</strong>https://platzi.com</small></p>
+          <p class="project_description">Ahora que ya tienes todos los conocimientos de HTML y CSS, estas listo para este curso práctico en el cual tendrás un reto: clonar la página de Google. Reforzarás conceptos como posicionamiento, modelo de cajas, tipos de Display, selectores como clases, IDS, Flexbox, y Grid.</p class="project_description">
+        </div>
+        <figure class="project_image_container">
+          <img src="imagenes/google.png" alt="Proyecto" width="500"/> 
+        </figure>
+        </article>
+      </div>     
+    </section> 
+
+<!-- TITULO DE SECCION INFORMACION -->
+    <div class="container">
+      <h2 class="event_list_title">Mas acerca de mi</h2>
+    </div> 
+<!-------------SECCION DE INFORMACION  --------------->
+    <section id="experiencia" class="event_list">
+      <div class="container">
+        <article class="event">
+          <figure class="event_image_container">
+            <img class="event_image" src="imagenes\hola_1.jpg" width="500" height="300" alt="Imagen de el evento">
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">Mi información</h3>
+            <p class="event_description">Como al principio de la pagina te he dicho mi nombre es Eduardo y actualmente voy en 6to semestre de la carrera de Ingeniería en Sistemas Computacionales de la cual quiero salir como un gran profesionista en el campo de la tecnología especialmente en la arquitectura Fronted y despues Backend para así ser un gran desarrollador <strong>FullStack, </strong> con conocimientos muy definidos. </p>
+            <a class="event_url" href="https://www.youtube.com/channel/UCcIHq-lEU_WsQZ87gEsg73A?view_as=subscriber" target="_blank">Canal de youtube</a>
+          </div>
+        </article> 
+        <article class="event">
+          <figure class="event_image_container">
+            <img class="event_image" src="imagenes/congreso.jpg" width="500" height="300" alt="Imagen de el evento"/>
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">CISC</h3>
+            <p class="event_description">El día 24 de octubre de 2019 se llevo a cabo el 1er. Congreso en Tecnologías y Sistemas Computacionales Aplicados con las conferencias magistrales:
+              Tecnología 4.0 y sus perspectivas para futuros profesionales, Blockchain, Enfoque Ágil en el Desarrollo de Proyectos Tecnológicos,Ciberseguridad, Investigación, Desarrollo e Innovación con soluciones de movilidad.</p>
+            <a class="event_url" href="https://www.facebook.com/CISC-Informaci%C3%B3n-1915113981881235/" target="_blank">Sitio</a>
+          </div>
+        </article>     
+        <article class="event">
+          <figure class="event_image_container">
+          <!--   <video class="html_video" src="C:\Users\52961\Desktop\PLATZI\DESARROLLO WEB ONLINE\imagenes\intro_tec.mp4" width="1280" height="720" controls></video> -->
+          <!--   <img class="event_image" src="C:\Users\52961\Desktop\PLATZI\DESARROLLO WEB ONLINE\imagenes/tecnm.jpg" width="500" height="300" alt="Imagen de el evento"/> -->
+          <div class="flexible_video">
+            <iframe class="youtube_video" width="560" height="315" src="https://www.youtube.com/embed/1fysHX-IgHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">Tecnológico Nacional de México</h3>
+            <p class="event_description">El Tecnológico Nacional de México, TecNM, es un sistema educativo que engloba un conjunto de establecimientos de educación superior pública de la República Mexicana. Los primeros institutos tecnológicos de México se crearon en 1948.
+            </p>
+            <a class="event_url" href="https://www.tecnm.mx/" target="_blank">Sitio</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_image_container">
+            <video class="html_video" src="imagenes\video_ittg.mp4" width="1280" height="720" controls></video>
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">Instituto Tecnologico de Tuxtla Gutiérrez (Diferente funcion).</h3>
+            <p class="event_description"><strong>Misión:</strong> 
+              Formar de manera integral profesionistas de excelencia en el campo de la ciencia y la tecnología con actitud emprendedora, respeto al medio ambiente y apego a los valores éticos.
+            </br><strong>Visión:</strong> Ser una Institución de Excelencia en la Educación Superior Tecnológica del Sureste, comprometida con el desarrollo socioeconómico sustentable de la región.<br></p>
+            <a class="event_url" href="https://www.tuxtla.tecnm.mx/" target="_blank">Sitio</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<!----------- SECCION DE CONTACTO ----------->
+   <section class="contact" id="trabajemos">
+      <div class="container">
+        <form class="form_email" action="/suscripcion/">
+          <h3>¿Creamos algo juntos?</h3>
+          <label for="email"></label>
+          <input type="text" placeholder="Déjame tu email" id="email">
+          <button>Enviar</button>
+        </form>
+        <div class="social">
+          <a href="https://twitter.com/eduarmcs" class="social_link twitter"></a>
+          <a href="https://www.facebook.com/eduard.mac.6" class="social_link facebook" href=""></a>
+          <a href="" class="social_link github"></a>
+          <a href="https://instagram.com/eduarmcs" class="social_link instagram"></a>
+        </div>
+      </div>
+    </section>
+
+<!------------- SECCION FOOOTER --------------->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Curso de Desarrollo Web Online 2020 <img src="imagenes\platzi.webp" width="80" alt="logo"/></p>
+        </div>
+        <div>
+          <p>Designed with 💖 by <a href="https://twitter.com/eduarmcs">@eduarmcs.</a></p>
+        </div>
+      </div>
+    </footer> 
+    <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu');
+      const burger_button = document.querySelector('#burger_menu');
+
+      ipad.addListener(validation)
+
+      function validation(event){
+        if(event.matches){
+            burger_button.addEventListener('click', hide_show)
+        }else{
+            burger_button.removeEventListener('click', hide_show)
+        }
+      }
+
+      function hide_show() {
+        if (menu.classList.contains('is_active')) {
+          menu.classList.remove('is_active');
+        } else {
+          menu.classList.add('is_active');
+        }
+
+        validation(ipad);
+      }
+    </script>
+  </body>
+</html>
