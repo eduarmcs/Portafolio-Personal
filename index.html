@@ -164,17 +164,17 @@
       </div>
     </footer> 
     <script>
-      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const ipad = window.matchMedia('screen and (max-width: 1024px)');
       const menu = document.querySelector('.menu');
       const burger_button = document.querySelector('#burger_menu');
 
-      ipad.addListener(validation)
+      ipad.addListener(validation);
 
       function validation(event){
         if(event.matches){
-            burger_button.addEventListener('click', hide_show)
-        }else{
-            burger_button.removeEventListener('click', hide_show)
+            burger_button.addEventListener('click', hide_show);
+        }else {
+            burger_button.removeEventListener('click', hide_show);
         }
       }
 
@@ -184,9 +184,9 @@
         } else {
           menu.classList.add('is_active');
         }
-
-        validation(ipad);
+      
       }
+      validation(ipad);
     </script>
   </body>
 </html>
