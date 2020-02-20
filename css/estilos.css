@@ -227,22 +227,22 @@ border-radius: 5px;
     background-size: 50px 50px;
   }
   .social_link.twitter{
-    background-image: url('../imagenes/twitter_1.svg');
+    background-image: url('https://i.imgur.com/N095zUY.png');
   }
   .social_link.facebook{
-    background-image: url('../imagenes/facebook_1.svg');
+    background-image: url('https://i.imgur.com/SibtWxP.png');
   }
   .social_link.github{
-    background-image: url('../imagenes/github.png');
+    background-image: url('https://i.imgur.com/HQKuRPz.png');
   }
   .social_link.instagram{
-    background-image: url('../imagenes/instagram_1.svg');
+    background-image: url('https://i.imgur.com/9MccYTU.png');
   }
   /* IMAGEN DENTRO DE LA BANDEJA DE CORREO */
   .form_email input{
   border-color: gray;
   padding:  10px 20px 10px 30px;
-  background-image: url('../imagenes/mensaje.svg');
+  background-image: url('https://i.imgur.com/HhVzHkC.png');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
