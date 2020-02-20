@@ -407,7 +407,7 @@ flex-wrap: wrap;
   /*********** CREANDO MENU DESPEGABLE ***********/
   .menu{
     position: fixed;
-    background: linear-gradient(to bottom, #1f1f1f, #056fff,  #1f1f1f);
+    background: rgba(31, 31, 31, .9);
     z-index: 3;
     top: 0;
     left: -100vw;
