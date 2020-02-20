@@ -207,6 +207,7 @@ border: 1px solid;
 padding:  5px 20px;
 text-decoration: none;
 border-radius: 5px;
+outline: none;
 }
 /****************SECCION DE CONTACTO**************/
 .contact{
@@ -225,18 +226,23 @@ border-radius: 5px;
     height: 50px;
     margin: 0 10px;
     background-size: 50px 50px;
+    outline: none;
   }
   .social_link.twitter{
     background-image: url('https://i.imgur.com/N095zUY.png');
+    outline: none;
   }
   .social_link.facebook{
     background-image: url('https://i.imgur.com/SibtWxP.png');
+    outline: none;
   }
   .social_link.github{
-    background-image: url('https://i.imgur.com/HQKuRPz.png');
+    background-image: url('https://i.imgur.com/XwNzsKV.png');
+    outline: none;
   }
   .social_link.instagram{
     background-image: url('https://i.imgur.com/9MccYTU.png');
+    outline: none;
   }
   /* IMAGEN DENTRO DE LA BANDEJA DE CORREO */
   .form_email input{
@@ -249,6 +255,7 @@ border-radius: 5px;
   background-position-x: 5px;
   border-radius: 5px;
   border-style: solid;
+  
   }
   /* boton para enviar correo */
   .form_email button{
@@ -260,6 +267,7 @@ border-radius: 5px;
   width: 100px;
   margin-bottom: 5px;
   margin-top: 5px;
+  outline: none;
   }
   /* BOTON PARA DEJAR CORREO */
   .form_email h3{
@@ -314,10 +322,10 @@ flex-wrap: wrap;
   left: 5px;
   top: 15px;
   color: white;
-  font-size: 45px;
+  font-size: 35px;
 }
 .burger_button img{
-  height: 30px;
+  height: 25px;
   width: 30px;
 }
 
