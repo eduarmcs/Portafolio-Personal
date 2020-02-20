@@ -1,61 +1,8 @@
-/* REGLAS 
-  SELECTORES
-  DECLARACIONES
-  PROPIEDADES
-  VALORES
-  */
-  
-/*Selector de etiqueta
-  header{
-    background: pink;
-  }
-  */
-
-/*selector descendente
-  body header div nav ol li a */
-    
-/*selector de clase
-    .link*/
-
-/*Selector de id #
-  #portafolio */
-
-
-/* APLICANDO ETIQUETA DE ICONO PARA MENU DEZPLEGABLE */
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?3ot2jt');
-  src:  url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?3ot2jt') format('truetype'),
-    url('../fonts/icomoon.woff?3ot2jt') format('woff'),
-    url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon_"], [class*=" icon_"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak-as: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon_menu:before {
-  content: "\e900";
-}
 /*APLICANDO FUENTE AL BODY */
 body{
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #1f1f1f, #056fff,  #1f1f1f);
 }
 /*APLICANDO PROPIEDADES A SELECTORES DIFERENTES*/
 h1,  
@@ -70,7 +17,7 @@ h6{
 
 /*********** SECCION DE MENU **************/
 .header{
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -113,7 +60,7 @@ figure{
 }
 /*´PORTAFOLIO*/
 .portfolio{
-background: #fafafa;
+/* background: #fafafa; */
 padding: 20px;
 }
 
@@ -128,7 +75,7 @@ border-radius: 10px;
 /*margin: 10px;*/
 margin-bottom: 15px;
 padding: 20px;
-background: white;
+background-color: rgba(255, 255, 255, .8);
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -189,7 +136,7 @@ h1 strong{
 }
 
 h2{
-color: #026fff;
+color: white;
 text-transform: uppercase;
 font-family: 'Source Sans Pro', sans-serif;
 font-weight: bold;
@@ -204,7 +151,7 @@ margin-bottom: 40px;
   background-size: 600px 300px;
   background-repeat: no-repeat;
   background-position-x: right;*/
-  background-color:  #1f1f1f;
+  /* background-color:  #1f1f1f; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,7 +174,7 @@ object-fit: cover;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background:#f4fbff;
+  background-color: rgba(255, 255, 255, .8);
 }
 
 .event_list_title{
@@ -247,6 +194,7 @@ margin-left: 10px;
   position: relative;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .event_description{
@@ -262,7 +210,7 @@ border-radius: 5px;
 }
 /****************SECCION DE CONTACTO**************/
 .contact{
-  background-color: #056fff;
+ /*  background-color: #056fff; */
   color: white;
   height: 150px;
   display: flex;
@@ -333,7 +281,7 @@ border-radius: 5px;
 /************SECCION DE FOOTER*****************/
 .footer{
 color: white;
-background-color:#1d252c;
+/* background-color:#1f1f1f; */
 display: flex;
 align-items:center;
 justify-content: space-between;
@@ -349,7 +297,6 @@ flex-wrap: wrap;
 }
 .html_video{
   width: 100%;
-/*   max-width: 100%; */
   height: auto;
 }
 
@@ -358,7 +305,7 @@ flex-wrap: wrap;
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, .8);
+  background-color:rgba(255, 255, 255, .9);
   display: none;
   line-height: 40px;
   text-align: center;
@@ -367,8 +314,13 @@ flex-wrap: wrap;
   left: 5px;
   top: 15px;
   color: white;
-  font-size: 40px;
+  font-size: 45px;
 }
+.burger_button img{
+  height: 30px;
+  width: 30px;
+}
+
 
 
 /*********** MEDIA QUERIES PARA RESPONSIVE DESIGN  ************/
@@ -437,14 +389,17 @@ flex-wrap: wrap;
   }
   .header ol li{
     height: 50px;
+    
   }
   .header a{
-    justify-content: center;
+   /*  justify-content: s; */
     height: auto;
     height: 40px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: underline;
     margin-bottom: .5em;
+    font-weight: bold;
+   
   }
   .header .logo{
     text-align: center;
@@ -452,17 +407,17 @@ flex-wrap: wrap;
   /*********** CREANDO MENU DESPEGABLE ***********/
   .menu{
     position: fixed;
-    background:rgba(2, 111, 255, .9);;
+    background: linear-gradient(to bottom, #1f1f1f, #056fff,  #1f1f1f);
     z-index: 3;
     top: 0;
     left: -100vw;
     bottom: 0;
-    width: 100vw;
- /*    height: 100vh; */
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: .2s;
+    
   }
   /******** HACIENDO QUE EL MENU SE MUESTRE **********/
   .menu.is_active{
@@ -470,6 +425,7 @@ flex-wrap: wrap;
   }
   .project{
     display: block;
+   
   }
   .project_image_container{
     width: auto;

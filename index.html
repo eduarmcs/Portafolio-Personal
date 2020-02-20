@@ -12,7 +12,10 @@
   </head>
   <body>
 <!-- ETIQUETA DE ICONO PARA MENU DEZPEGABLE -->
-    <i class="icon_menu burger_button" id="burger_menu"></i>
+    <div class="burger_button">
+      <img src="imagenes/menu_5.svg" id="burger_menu">
+    </div>
+    
 <!----------- SECCION DE MENU ------------- -->
     <header class="header">
       <div class="container">
@@ -106,14 +109,13 @@
         </article>     
         <article class="event">
           <figure class="event_image_container">
-          <!--   <video class="html_video" src="C:\Users\52961\Desktop\PLATZI\DESARROLLO WEB ONLINE\imagenes\intro_tec.mp4" width="1280" height="720" controls></video> -->
-          <!--   <img class="event_image" src="C:\Users\52961\Desktop\PLATZI\DESARROLLO WEB ONLINE\imagenes/tecnm.jpg" width="500" height="300" alt="Imagen de el evento"/> -->
           <div class="flexible_video">
             <iframe class="youtube_video" width="560" height="315" src="https://www.youtube.com/embed/1fysHX-IgHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           </figure>
           <div class="event_detail">
             <h3 class="event_title">Tecnológico Nacional de México</h3>
+            <br>
             <p class="event_description">El Tecnológico Nacional de México, TecNM, es un sistema educativo que engloba un conjunto de establecimientos de educación superior pública de la República Mexicana. Los primeros institutos tecnológicos de México se crearon en 1948.
             </p>
             <a class="event_url" href="https://www.tecnm.mx/" target="_blank">Sitio</a>
@@ -121,13 +123,17 @@
         </article>
         <article class="event">
           <figure class="event_image_container">
-            <video class="html_video" src="imagenes\video_ittg.mp4" width="1280" height="720" controls></video>
+          <!--   <video class="html_video" src="imagenes\video_ittg.mp4" width="1280" height="720" controls></video> -->
+          <div class="flexible_video">
+            <iframe class="youtube_video" width="560" height="315" src="https://www.youtube.com/embed/uefC-muOi8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           </figure>
           <div class="event_detail">
-            <h3 class="event_title">Instituto Tecnologico de Tuxtla Gutiérrez (Diferente funcion).</h3>
+            <h3 class="event_title">Instituto Tecnologico de Tuxtla Gutiérrez.</h3>
+            <br>
             <p class="event_description"><strong>Misión:</strong> 
-              Formar de manera integral profesionistas de excelencia en el campo de la ciencia y la tecnología con actitud emprendedora, respeto al medio ambiente y apego a los valores éticos.
-            </br><strong>Visión:</strong> Ser una Institución de Excelencia en la Educación Superior Tecnológica del Sureste, comprometida con el desarrollo socioeconómico sustentable de la región.<br></p>
+              Formar de manera integral profesionistas de excelencia en el campo de la ciencia y la tecnología con actitud emprendedora.
+            </br><strong>Visión:</strong> Ser una Institución de Excelencia en la Educación Superior Tecnológica del Sureste.<br></p>
             <a class="event_url" href="https://www.tuxtla.tecnm.mx/" target="_blank">Sitio</a>
           </div>
         </article>
@@ -156,7 +162,7 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <p>Curso de Desarrollo Web Online 2020 <img src="imagenes\platzi.webp" width="80" alt="logo"/></p>
+          <p>Curso de Desarrollo Web Online 2020. </p>
         </div>
         <div>
           <p>Designed with 💖 by <a href="https://twitter.com/eduarmcs">@eduarmcs.</a></p>
